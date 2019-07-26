@@ -1,4 +1,4 @@
-package me.springkafka.test;
+package me.springboot.kafka;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

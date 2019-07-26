@@ -1,6 +1,5 @@
-package me.springkafka.test;
+package me.springboot.kafka;
 
-import org.apache.kafka.clients.consumer.KafkaConsumer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -20,6 +19,7 @@ public class KafkaController {
 	
 	@PostMapping(value="/pushMsg")
 	public void pushMsg(@RequestParam String msg) {
+		//TODO - send TxtMsg obj.
 		kafkaProducer.sendMessage(msg);
 	}
 	
